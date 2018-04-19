@@ -11,6 +11,7 @@ body{
     width: 100%;
     height: 100%;
     margin: 0;
+    background-color: #EEEEEE;
 }
 header{
     width: 100%;
@@ -20,11 +21,11 @@ header{
     background-color: #008AFF;
     
 }
-.headerContent{
+.header-content{
     display: flex;
     width: 1000px; 
 }
-.headerContainer{
+.header-container{
     display: flex;
     flex: 1;
     color: white;
@@ -32,17 +33,18 @@ header{
     align-items: center;
     font: 300 35px 'Roboto', sans-serif;
 }
-.userMode, .logout{
+.user-mode, .logout{
     background-color: transparent;
     width: 250px;
     height: 40px;
     color: white;
     font: 400 19px 'Roboto', sans-serif;
 }
-.userMode{
+.user-mode{
     border: 2px solid white;
     border-radius: 2px;
 }
 .material-icons.md-25{
     font-size: 35px;
 }
+
