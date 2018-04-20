@@ -7,6 +7,7 @@
     border: none;
     font-size: 0;
 }
+
 body{
     width: 100%;
     height: 100%;
@@ -19,32 +20,109 @@ header{
     display: flex;
     justify-content: center;
     background-color: #008AFF;
-    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.08);
 }
+
 .header-content{
     display: flex;
     width: 1000px; 
 }
 .header-container{
+    flex-direction: column;
     display: flex;
     flex: 1;
     color: white;
     justify-content: center;
     align-items: center;
     font: 300 35px 'Roboto', sans-serif;
+    cursor: default;
 }
+
 .user-mode, .logout{
     background-color: transparent;
     width: 250px;
     height: 40px;
     color: white;
     font: 400 19px 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.logout{
+    width: auto;
+    align-self: flex-end;
+
 }
 .user-mode{
     border: 2px solid white;
     border-radius: 2px;
+    align-self: flex-start;
 }
-.material-icons.md-25{
+.material-icons.md-35{
     font-size: 35px;
 }
 
+main,.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    width: 1000px;
+}
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    margin: 50px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar__link{
+    font: 300 18px 'Roboto', sans-serif;
+    text-decoration: none; 
+    background-color: white;
+    border: 1px solid #008AFF;
+    border-radius: 10px;
+    flex: 1;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+.nav-bar__link:hover{
+    border: 2px solid #008AFF;
+}
+.nav-bar__link:active{
+    background-color: #008AFF;
+    color: white;
+}
+.nav-bar__link:visited { text-decoration: none; } 
+.nav-bar__link:active { text-decoration: none; }
+
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    position: relative;
+}
+.print{
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
+    background-color: #008AFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.material-icons.md-50{
+    font-size: 50px;
+}
+.material-icons.white{
+    color: white;
+}
