@@ -7,51 +7,82 @@
   border: none;
   font-size: 0;
 }
-body{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
+
 header{
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
   background-color: #008AFF;
-    
 }
-.headerContent{
+
+.header-content{
+  margin: 0 auto;
+  max-width: 1500px;
   display: flex;
-  width: 1000px; 
+  height: 100px;
 }
-.headerContainer{
-  flex-direction: column;
+
+.header-content__button-container, .header-content__title-container, .header-content__tools-container{
   display: flex;
   flex: 1;
+}
+
+.header-content__button-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-content__switch-mode-button{
+  border:  2px solid #008AFF;
+  border-radius: 2px;
   color: white;
+  cursor: pointer;
+  font: 400 19px 'Roboto', sans-serif;
+  padding: 5px 14px;
+  transition: border .2s;
+}
+
+.header-content__switch-mode-button:hover{
+  border: 2px solid #FFFFFF;
+}
+
+.header-content__title-container{
+  font: 300 35px 'Roboto', sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
-  font: 300 35px 'Roboto', sans-serif;
-}
-
-.userMode, .logout{
-  background-color: transparent;
-  width: 250px;
-  height: 40px;
   color: white;
-  font: 400 19px 'Roboto', sans-serif;
+  line-height: 100px;
+  min-width: 325px;
+}
+
+.header-content__tools-container{
+  padding-right: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-content__about-user{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.header-content__users-login{
+  color: #FFFFFF;
+  font: 400 22px 'Roboto', sans-serif;
+}
+
+.header-content__balance, .header-content__currency{
+  margin-top: -5px;
+  color: #FFFFFF;
+  font: 400 28px 'Roboto', sans-serif;  
+}
+
+
+
+.exit-ico, .history-ico{
   cursor: pointer;
-}
-.userMode{
-  border: 2px solid #FFFFFF;
-  border-radius: 2px;
-  align-self: flex-start;
-}
-
-.logout{
-  text-align: right;
-}
-
-.material-icons.md-25{
-  font-size: 35px;
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-size: 30px;
 }

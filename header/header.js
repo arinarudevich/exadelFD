@@ -1,2 +1,2 @@
-import './user.css'
-import template from './admin.hbs'
+import './header.css'
+import template from './header.hbs'
